@@ -25,8 +25,7 @@ Seamless integration with the [Infinite image browsing](https://github.com/zanll
 
 
 ## Installation and Running
-
-    Nothing special, if you have never installed auto1111 webui's or a fork you probably shouldn't be installing this.
+Nothing special, if you have never installed auto1111 webui's or a fork you probably shouldn't be installing this.
 
 ## Disclaimer
 
