@@ -1,204 +1,36 @@
-# Stable Diffusion web UI-UX
-A bespoke, highly adaptable user interface for the Stable Diffusion, utilizing the powerful Gradio library. This cutting-edge browser interface offer an unparalleled level of customization and optimization for users, setting it apart from other web interfaces.
+# UI-UX Forge Fusion
+## Combining the aesthetic interface and user-centric design of the *UI-UX* fork with the unparalleled optimizations and speed of the *Forge* fork.
 
-![](screenshot.png)
+### A merge of the forks [stable-diffusion-webui-ux](https://github.com/anapnoe/stable-diffusion-webui-ux/assets/124302297/15db3c70-6fbf-4692-85f3-85cd8df58f47) and [stable-diffusion-webui-forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) of [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui).
 
-## Optimizations
-- Replacing all default Gradio stylesheets in the DOM with an optimized version that promote better visual coherence across components.
-- Eliminating inline styles and Svelte classes from the DOM to minimize clutter and improve efficiency.
-- Removing unnecessary "img2img Extra Networks" from the DOM to reduce duplicated images and event listeners.
-- Eradicating inline event listeners from "txt2img Extra Networks" cards and action buttons.
-- Applying an event delegation pattern to further streamline the code by consolidating event handling for "txt2img Extra Networks" cards and action buttons.
 
-## Features webui-ux 
-- A versatile micro-template engine that can be leveraged by other extensions
-- Customizable theme styles through a user-friendly configuration interface
-- Built-in console log
-- Option to ignore overrides
-- Support for tick marks on input range sliders for improved usability
-- Ability to switch between slider and number input modes, allowing users to enter values manually without displaying the slider.
 
-## Workspaces UI-UX (work in progress)
-The workspaces extension empowers you to create customized views and organize them according to your unique preferences. With an intuitive drag-and-drop interface, you can design workflows that are perfectly tailored to your specific requirements, giving you ultimate control over your work environment.
+![](screenshot1.png)
 
-![workspaces](https://github.com/anapnoe/stable-diffusion-webui-ux/assets/124302297/15db3c70-6fbf-4692-85f3-85cd8df58f47)
 
-[Become a supporter and get early access to Workspaces for UI-UX.](https://buymeacoffee.com/dayanbayah)
+
+
+<p align="center"> Forge </p> | <p align="center"> UI-UX </p>
+------------- | -------------
+Forge is a platform on top of Stable Diffusion WebUI to make development easier, optimize resource management, and speed up inference.  Forge will never add unnecessary opinioned changes to the user interface. You are still using 100% Automatic1111 WebUI. | A bespoke, highly adaptable user interface for the Stable Diffusion, utilizing the powerful Gradio library. This cutting-edge browser interface offer an unparalleled level of customization and optimization for users, setting it apart from other web interfaces.  
+· On GPUs around **8GB** vram, expect **30~45%** speed up in inference speed and **2x-3x** resolution (that will not OOM) <br> · On GPUs around **6GB** vram, expect **60~75%** speed up in inference speed and **3x** resolution (that will not OOM) <br> · **ControlNet count** will increase about **2x**, the speed with SDXL+ControlNet will speed up about **30~45%**. | · Replacing all default Gradio stylesheets in the DOM with an optimized version that promote **better visual coherence across components.** <br> · C**ustomizable theme styles** through a user-friendly configuration interface<br> · Ability to switch between slider and number input modes, allowing users to enter values manually without displaying the slider.<br>· Built-in console log
+|
+Latest commit hash: *29be1da7cf2b5dccfc70fbdd33eb35c56a31ffb7*|Latest commit hash:  *7f26cba791067b7d14fc06191f4159a3d268c186*
+### Soft Inpaining SDXL
+![Soft inpainting](Screenshot2.png)
 
 ## Infinite image browsing integration
 Seamless integration with the [Infinite image browsing](https://github.com/zanllp/sd-webui-infinite-image-browsing) extension.
 
 ![InfiniteImageBrowserIntegration](https://github.com/anapnoe/stable-diffusion-webui-ux/assets/124302297/f9048ff4-0d78-4227-8b3f-5a282d24e5cb)
 
-## Todo
-- Improve Mobile Support
-- Fullscreen Gallery Support
-
-
-## Features
-[Detailed feature showcase with images](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features):
-- Original txt2img and img2img modes
-- One click install and run script (but you still must install python and git)
-- Outpainting
-- Inpainting
-- Color Sketch
-- Prompt Matrix
-- Stable Diffusion Upscale
-- Attention, specify parts of text that the model should pay more attention to
-    - a man in a `((tuxedo))` - will pay more attention to tuxedo
-    - a man in a `(tuxedo:1.21)` - alternative syntax
-    - select text and press `Ctrl+Up` or `Ctrl+Down` (or `Command+Up` or `Command+Down` if you're on a MacOS) to automatically adjust attention to selected text (code contributed by anonymous user)
-- Loopback, run img2img processing multiple times
-- X/Y/Z plot, a way to draw a 3 dimensional plot of images with different parameters
-- Textual Inversion
-    - have as many embeddings as you want and use any names you like for them
-    - use multiple embeddings with different numbers of vectors per token
-    - works with half precision floating point numbers
-    - train embeddings on 8GB (also reports of 6GB working)
-- Extras tab with:
-    - GFPGAN, neural network that fixes faces
-    - CodeFormer, face restoration tool as an alternative to GFPGAN
-    - RealESRGAN, neural network upscaler
-    - ESRGAN, neural network upscaler with a lot of third party models
-    - SwinIR and Swin2SR ([see here](https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/2092)), neural network upscalers
-    - LDSR, Latent diffusion super resolution upscaling
-- Resizing aspect ratio options
-- Sampling method selection
-    - Adjust sampler eta values (noise multiplier)
-    - More advanced noise setting options
-- Interrupt processing at any time
-- 4GB video card support (also reports of 2GB working)
-- Correct seeds for batches
-- Live prompt token length validation
-- Generation parameters
-     - parameters you used to generate images are saved with that image
-     - in PNG chunks for PNG, in EXIF for JPEG
-     - can drag the image to PNG info tab to restore generation parameters and automatically copy them into UI
-     - can be disabled in settings
-     - drag and drop an image/text-parameters to promptbox
-- Read Generation Parameters Button, loads parameters in promptbox to UI
-- Settings page
-- Running arbitrary python code from UI (must run with `--allow-code` to enable)
-- Mouseover hints for most UI elements
-- Possible to change defaults/mix/max/step values for UI elements via text config
-- Tiling support, a checkbox to create images that can be tiled like textures
-- Progress bar and live image generation preview
-    - Can use a separate neural network to produce previews with almost none VRAM or compute requirement
-- Negative prompt, an extra text field that allows you to list what you don't want to see in generated image
-- Styles, a way to save part of prompt and easily apply them via dropdown later
-- Variations, a way to generate same image but with tiny differences
-- Seed resizing, a way to generate same image but at slightly different resolution
-- CLIP interrogator, a button that tries to guess prompt from an image
-- Prompt Editing, a way to change prompt mid-generation, say to start making a watermelon and switch to anime girl midway
-- Batch Processing, process a group of files using img2img
-- Img2img Alternative, reverse Euler method of cross attention control
-- Highres Fix, a convenience option to produce high resolution pictures in one click without usual distortions
-- Reloading checkpoints on the fly
-- Checkpoint Merger, a tab that allows you to merge up to 3 checkpoints into one
-- [Custom scripts](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Custom-Scripts) with many extensions from community
-- [Composable-Diffusion](https://energy-based-model.github.io/Compositional-Visual-Generation-with-Composable-Diffusion-Models/), a way to use multiple prompts at once
-     - separate prompts using uppercase `AND`
-     - also supports weights for prompts: `a cat :1.2 AND a dog AND a penguin :2.2`
-- No token limit for prompts (original stable diffusion lets you use up to 75 tokens)
-- DeepDanbooru integration, creates danbooru style tags for anime prompts
-- [xformers](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Xformers), major speed increase for select cards: (add `--xformers` to commandline args)
-- via extension: [History tab](https://github.com/yfszzx/stable-diffusion-webui-images-browser): view, direct and delete images conveniently within the UI
-- Generate forever option
-- Training tab
-     - hypernetworks and embeddings options
-     - Preprocessing images: cropping, mirroring, autotagging using BLIP or deepdanbooru (for anime)
-- Clip skip
-- Hypernetworks
-- Loras (same as Hypernetworks but more pretty)
-- A separate UI where you can choose, with preview, which embeddings, hypernetworks or Loras to add to your prompt 
-- Can select to load a different VAE from settings screen
-- Estimated completion time in progress bar
-- API
-- Support for dedicated [inpainting model](https://github.com/runwayml/stable-diffusion#inpainting-with-stable-diffusion) by RunwayML
-- via extension: [Aesthetic Gradients](https://github.com/AUTOMATIC1111/stable-diffusion-webui-aesthetic-gradients), a way to generate images with a specific aesthetic by using clip images embeds (implementation of [https://github.com/vicgalle/stable-diffusion-aesthetic-gradients](https://github.com/vicgalle/stable-diffusion-aesthetic-gradients))
-- [Stable Diffusion 2.0](https://github.com/Stability-AI/stablediffusion) support - see [wiki](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#stable-diffusion-20) for instructions
-- [Alt-Diffusion](https://arxiv.org/abs/2211.06679) support - see [wiki](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#alt-diffusion) for instructions
-- Now without any bad letters!
-- Load checkpoints in safetensors format
-- Eased resolution restriction: generated image's dimension must be a multiple of 8 rather than 64
-- Now with a license!
-- Reorder elements in the UI from settings screen
 
 ## Installation and Running
-Make sure the required [dependencies](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Dependencies) are met and follow the instructions available for:
-- [NVidia](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-NVidia-GPUs) (recommended)
-- [AMD](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-AMD-GPUs) GPUs.
-- [Intel CPUs, Intel GPUs (both integrated and discrete)](https://github.com/openvinotoolkit/stable-diffusion-webui/wiki/Installation-on-Intel-Silicon) (external wiki page)
 
-Alternatively, use online services (like Google Colab):
+    Nothing special, if you have never installed auto1111 webui's or a fork you probably shouldn't be installing this.
 
-- [List of Online Services](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Online-Services)
+## Disclaimer
 
-### Automatic Installation on Windows
-1. Install [Python 3.10.6](https://www.python.org/downloads/release/python-3106/) (Newer version of Python does not support torch), checking "Add Python to PATH".
-2. Install [git](https://git-scm.com/download/win).
-3. Download the stable-diffusion-webui repository, for example by running `git clone https://github.com/anapnoe/stable-diffusion-webui-ux.git`.
-4. Run `webui-user.bat` from Windows Explorer as normal, non-administrator, user.
+### I have no idea what I am doing; <br> This highly experimental and prone to breaking, I haven't tested everything and probably won't maintain this repo. Mainly copied files through meld.
 
-### Automatic Installation on Linux
-1. Install the dependencies:
-```bash
-# Debian-based:
-sudo apt install wget git python3 python3-venv libgl1 libglib2.0-0
-# Red Hat-based:
-sudo dnf install wget git python3
-# Arch-based:
-sudo pacman -S wget git python3
-```
-2. Navigate to the directory you would like the webui to be installed and execute the following command:
-```bash
-wget -q https://raw.githubusercontent.com/anapnoe/stable-diffusion-webui-ux/master/webui.sh
-```
-3. Run `webui.sh`.
-4. Check `webui-user.sh` for options.
-### Installation on Apple Silicon
 
-Find the instructions [here](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon).
-
-## Contributing
-Here's how to add code to this repo: [Contributing](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Contributing)
-
-## Documentation
-
-The documentation was moved from this README over to the project's [wiki](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki).
-
-For the purposes of getting Google and other search engines to crawl the wiki, here's a link to the (not for humans) [crawlable wiki](https://github-wiki-see.page/m/AUTOMATIC1111/stable-diffusion-webui/wiki).
-
-## Credits
-Licenses for borrowed code can be found in `Settings -> Licenses` screen, and also in `html/licenses.html` file.
-
-- Stable Diffusion - https://github.com/CompVis/stable-diffusion, https://github.com/CompVis/taming-transformers
-- k-diffusion - https://github.com/crowsonkb/k-diffusion.git
-- Spandrel - https://github.com/chaiNNer-org/spandrel implementing
-  - GFPGAN - https://github.com/TencentARC/GFPGAN.git
-  - CodeFormer - https://github.com/sczhou/CodeFormer
-  - ESRGAN - https://github.com/xinntao/ESRGAN
-  - SwinIR - https://github.com/JingyunLiang/SwinIR
-  - Swin2SR - https://github.com/mv-lab/swin2sr
-- LDSR - https://github.com/Hafiidz/latent-diffusion
-- MiDaS - https://github.com/isl-org/MiDaS
-- Ideas for optimizations - https://github.com/basujindal/stable-diffusion
-- Cross Attention layer optimization - Doggettx - https://github.com/Doggettx/stable-diffusion, original idea for prompt editing.
-- Cross Attention layer optimization - InvokeAI, lstein - https://github.com/invoke-ai/InvokeAI (originally http://github.com/lstein/stable-diffusion)
-- Sub-quadratic Cross Attention layer optimization - Alex Birch (https://github.com/Birch-san/diffusers/pull/1), Amin Rezaei (https://github.com/AminRezaei0x443/memory-efficient-attention)
-- Textual Inversion - Rinon Gal - https://github.com/rinongal/textual_inversion (we're not using his code, but we are using his ideas).
-- Idea for SD upscale - https://github.com/jquesnelle/txt2imghd
-- Noise generation for outpainting mk2 - https://github.com/parlance-zz/g-diffuser-bot
-- CLIP interrogator idea and borrowing some code - https://github.com/pharmapsychotic/clip-interrogator
-- Idea for Composable Diffusion - https://github.com/energy-based-model/Compositional-Visual-Generation-with-Composable-Diffusion-Models-PyTorch
-- xformers - https://github.com/facebookresearch/xformers
-- DeepDanbooru - interrogator for anime diffusers https://github.com/KichangKim/DeepDanbooru
-- Sampling in float32 precision from a float16 UNet - marunine for the idea, Birch-san for the example Diffusers implementation (https://github.com/Birch-san/diffusers-play/tree/92feee6)
-- Instruct pix2pix - Tim Brooks (star), Aleksander Holynski (star), Alexei A. Efros (no star) - https://github.com/timothybrooks/instruct-pix2pix
-- Security advice - RyotaK
-- UniPC sampler - Wenliang Zhao - https://github.com/wl-zhao/UniPC
-- TAESD - Ollin Boer Bohan - https://github.com/madebyollin/taesd
-- LyCORIS - KohakuBlueleaf
-- Restart sampling - lambertae - https://github.com/Newbeeer/diffusion_restart_sampling
-- Initial Gradio script - posted on 4chan by an Anonymous user. Thank you Anonymous user.
-- (You)
