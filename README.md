@@ -10,11 +10,10 @@
 
 
 
-<p align="center"> Forge </p> | <p align="center"> UI-UX </p>
+Forge | UI-UX
 ------------- | -------------
 Forge is a platform on top of Stable Diffusion WebUI to make development easier, optimize resource management, and speed up inference.  Forge will never add unnecessary opinioned changes to the user interface. You are still using 100% Automatic1111 WebUI. | A bespoke, highly adaptable user interface for the Stable Diffusion, utilizing the powerful Gradio library. This cutting-edge browser interface offer an unparalleled level of customization and optimization for users, setting it apart from other web interfaces.  
 · On GPUs around **8GB** vram, expect **30~45%** speed up in inference speed and **2x-3x** resolution (that will not OOM) <br> · On GPUs around **6GB** vram, expect **60~75%** speed up in inference speed and **3x** resolution (that will not OOM) <br> · **ControlNet count** will increase about **2x**, the speed with SDXL+ControlNet will speed up about **30~45%**. | · Replacing all default Gradio stylesheets in the DOM with an optimized version that promote **better visual coherence across components.** <br> · C**ustomizable theme styles** through a user-friendly configuration interface<br> · Ability to switch between slider and number input modes, allowing users to enter values manually without displaying the slider.<br>· Built-in console log
-|
 Latest commit hash: *29be1da7cf2b5dccfc70fbdd33eb35c56a31ffb7*|Latest commit hash:  *7f26cba791067b7d14fc06191f4159a3d268c186*
 ### Soft Inpaining SDXL
 ![Soft inpainting](Screenshot2.png)
