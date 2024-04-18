@@ -29,6 +29,6 @@ Nothing special, if you have never installed auto1111 webui's or a fork you prob
 
 ## Disclaimer
 
-### I have no idea what I am doing; <br> This highly experimental and prone to breaking, I haven't tested everything and probably won't maintain this repo. Mainly copied files through meld.
+### I have no idea what I am doing; <br> This is highly experimental and prone to breaking, I haven't tested everything and probably won't maintain this repo. Mainly copied files through meld.
 
 
