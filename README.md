@@ -3,7 +3,10 @@
 
 ### A merge of the forks [stable-diffusion-webui-ux](https://github.com/anapnoe/stable-diffusion-webui-ux/assets/124302297/15db3c70-6fbf-4692-85f3-85cd8df58f47) and [stable-diffusion-webui-forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) of [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui).
 
-
+<br>
+> [!CAUTION]
+> This repo is unmaintained, refer to parent projects instead.
+<br>
 
 ![](screenshot1.png)
 
