@@ -1,8 +1,7 @@
 
 > [!CAUTION]  
-> This repo is unmaintained, refer to parent projects instead.
+> ## This repo is unmaintained, refer to parent projects instead.
 
-<br>
 
 # UI-UX Forge Fusion
 ## Combining the aesthetic interface and user-centric design of the *UI-UX* fork with the unparalleled optimizations and speed of the *Forge* fork.
