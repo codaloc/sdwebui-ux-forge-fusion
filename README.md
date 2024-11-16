@@ -1,15 +1,14 @@
-# UI-UX Forge Fusion
-## Combining the aesthetic interface and user-centric design of the *UI-UX* fork with the unparalleled optimizations and speed of the *Forge* fork.
-
-### A merge of the forks [stable-diffusion-webui-ux](https://github.com/anapnoe/stable-diffusion-webui-ux/assets/124302297/15db3c70-6fbf-4692-85f3-85cd8df58f47) and [stable-diffusion-webui-forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) of [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui).
-
-
-<br>
 
 > [!CAUTION]  
 > This repo is unmaintained, refer to parent projects instead.
 
 <br>
+
+# UI-UX Forge Fusion
+## Combining the aesthetic interface and user-centric design of the *UI-UX* fork with the unparalleled optimizations and speed of the *Forge* fork.
+
+### A merge of the forks [stable-diffusion-webui-ux](https://github.com/anapnoe/stable-diffusion-webui-ux/assets/124302297/15db3c70-6fbf-4692-85f3-85cd8df58f47) and [stable-diffusion-webui-forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) of [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui).
+
 
 ![](screenshot1.png)
 
